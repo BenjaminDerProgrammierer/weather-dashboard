@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@1.3.0/font/qweather-icons.css">
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <h1>Weather Dashboard</h1>
+    <div id="container">
+        <div class="card-grid">
+            <div class="card search-card">
+                <h2>Search for a city</h2>
+                <div class="search-card-forms">
+                    <div class="search-card-form">
+                        <input type="text" id="city" placeholder="City">
+                        <button id="add">Add</button>
+                    </div>
+                    <div class="unit-form">
+                        <label class="checkbox-container">°C
+                            <input type="radio" checked="checked" id="celsius" name="unit" value="metric" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">°F
+                            <input type="radio" id="fahrenheit" name="unit" value="imperial">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-2">
+                <h2>Vienna <span class="close-card" onclick="closeCard(2)">&times;</span></h2>
+                <h3>Austria</h3>
+                <div class="weather-info-container">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                    <span class="temperature">00 °C</span>
+                    <span class="description">Clouded night</span>
+                </div>
+            </div>
+            <div class="card" id="card-2">
+                <h2>Linz <span class="close-card" onclick="closeCard(2)">&times;</span></h2>
+                <h3>Austria</h3>
+                <div class="weather-info-container">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                    <span class="temperature">00 °C</span>
+                    <span class="description">Sunny</span>
+                </div>
+            </div>
+            <div class="card" id="card-2">
+                <h2>Linz <span class="close-card" onclick="closeCard(2)">&times;</span></h2>
+                <h3>Austria</h3>
+                <div class="weather-info-container">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                    <span class="temperature">00 °C</span>
+                    <span class="description">Sunny</span>
+                </div>
+            </div>
+            <div class="card" id="card-2">
+                <h2>Linz <span class="close-card" onclick="closeCard(2)">&times;</span></h2>
+                <h3>Austria</h3>
+                <div class="weather-info-container">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                    <span class="temperature">00 °C</span>
+                    <span class="description">Sunny</span>
+                </div>
+            </div>
+            <div class="card" id="card-2">
+                <h2>Linz <span class="close-card" onclick="closeCard(2)">&times;</span></h2>
+                <h3>Austria</h3>
+                <div class="weather-info-container">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                    <span class="temperature">00 °C</span>
+                    <span class="description">Sunny</span>
+                </div>
+            </div>
+            <div class="card" id="card-2">
+                <h2>Linz <span class="close-card" onclick="closeCard(2)">&times;</span></h2>
+                <h3>Austria</h3>
+                <div class="weather-info-container">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                    <span class="temperature">00 °C</span>
+                    <span class="description">Sunny</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            API Credits: Open Meteo, Icons: <i class="qi-qweather"></i>QWeather
+        </footer>
+</body>
+
+</html>

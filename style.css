@@ -1,0 +1,267 @@
+html {
+    background: #1d1d1d;
+    color: #e1e1e1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cards */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    margin-top: 20px;
+}
+
+/* Other Cards */
+.card:not(:first-child) {
+    padding: 0;
+}
+
+.card .close-card-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background: #3d3d3d;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.card .close-card {
+    float: right;
+    background: #3d3d3d;
+    color: #e1e1e1;
+    font-size: 26px;
+    border: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.card .close-card:hover {
+    background: #4d4d4d;
+}
+
+.card .close-card:active {
+    background: #2d2d2d;
+}
+
+.card h2 {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    background: #3d3d3d;
+    color: #e1e1e1;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card h3 {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+    background: #3d3d3d;
+    color: #e1e1e1;
+    font-size: 15px;
+    text-align: left;
+}
+
+.card .weather-info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card img {
+    max-width: 100px;
+}
+
+.card .temperature {
+    font-size: 30px;
+    display: block;
+}
+
+.card .description {
+    font-size: 20px;
+    display: block;
+}
+
+/* Search Card */
+.search-card {
+    width: calc(100% - 20px);
+    background: #3d3d3d;
+}
+
+.search-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #3d3d3d;
+    background: #2d2d2d;
+    color: #e1e1e1;
+    font-size: 16px;
+}
+
+.search-card input:focus {
+    outline: none;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.search-card button#add {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    background: #3d3d3d;
+    color: #e1e1e1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-card button#add:hover {
+    background: #4d4d4d;
+}
+
+.search-card button#add:active {
+    background: #2d2d2d;
+}
+
+.search-card-forms {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.search-card-form {
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    background: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+}
+
+.unit-form {
+    width: calc(100% - 30px);
+
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10px;
+    background: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+}
+
+.unit-form div {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkbox-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100vw - 20px);
+    margin: 0 auto;
+    padding: 10px;
+    background: #2d2d2d;
+    border-top: 1px solid #3d3d3d;
+    text-align: center;
+}
+
+footer img {
+    background: #e1e1e1;
+}
